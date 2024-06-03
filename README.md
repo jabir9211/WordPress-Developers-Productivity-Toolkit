@@ -61,6 +61,6 @@ And many more to come! Stay tuned for future updates. 😊
 
 ## 🤝 Join the Community
 
-We'd love to hear your feedback and see how these snippets are helping you. Join our GitHub community, contribute your own snippets, and let's build a more productive WordPress development environment together!
+We'd love to hear your feedback and see how these snippets are helping you. Join our GitHub community, contribute your own snippets, and let's build a more productive WordPress development environment together!Thanks
 
 Happy coding! 💻✨
