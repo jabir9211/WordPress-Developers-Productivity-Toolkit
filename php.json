@@ -1,0 +1,175 @@
+{
+	"Register Product Custom Post Type": {
+        "prefix": "jr_cpt",
+        "body": [
+            "// Product Custom Post Type",
+            "function product_init() {",
+            "    // set up product labels",
+            "    $$labels = array(",
+            "        'name' => '${1:Products}',",
+            "        'singular_name' => '${2:Product}',",
+            "        'add_new' => 'Add New ${2:Product}',",
+            "        'add_new_item' => 'Add New ${2:Product}',",
+            "        'edit_item' => 'Edit ${2:Product}',",
+            "        'new_item' => 'New ${2:Product}',",
+            "        'all_items' => 'All ${1:Products}',",
+            "        'view_item' => 'View ${2:Product}',",
+            "        'search_items' => 'Search ${1:Products}',",
+            "        'not_found' =>  'No ${1:Products} Found',",
+            "        'not_found_in_trash' => 'No ${1:Products} found in Trash',", 
+            "        'parent_item_colon' => '',",
+            "        'menu_name' => '${1:Products}',",
+            "    );",
+            "",
+            "    // register post type",
+            "    $$args = array(",
+            "        'labels' => $$labels,",
+            "        'public' => true,",
+            "        'has_archive' => true,",
+            "        'show_ui' => true,",
+            "        'capability_type' => 'post',",
+            "        'hierarchical' => false,",
+            "        'rewrite' => array('slug' => 'product'),",
+            "        'query_var' => true,",
+            "        'menu_icon' => 'dashicons-randomize',",
+            "        'supports' => array(",
+            "            'title',",
+            "            'editor',",
+            "            'excerpt',",
+            "            'trackbacks',",
+            "            'custom-fields',",
+            "            'comments',",
+            "            'revisions',",
+            "            'thumbnail',",
+            "            'author',",
+            "            'page-attributes'",
+            "        )",
+            "    );",
+            "    register_post_type( 'product', $$args );",
+            "",
+            "    // register taxonomy",
+            "    register_taxonomy('product_category', 'product', array('hierarchical' => true, 'label' => 'Category', 'query_var' => true, 'rewrite' => array( 'slug' => 'product-category' )));",
+            "}",
+            "add_action( 'init', 'product_init' );"
+        ],
+        "description": "Register a Custom Post Type for Products"
+    }
+	
+	"Enqueue Scripts and Styles": {
+        "prefix": "jr_scripts",
+        "body": [
+            "function jr_enqueue_scripts() {",
+            "    //style",            
+            "    wp_enqueue_style('main-css', get_theme_file_uri('/style.css'));",
+            "    //scripts",
+            "    wp_enqueue_script('jq-js', get_theme_file_uri('/js/jquery-3.3.1.min.js'), array('jquery'), '1.0', true);",
+            "}",
+            "add_action('wp_enqueue_scripts', 'jr_enqueue_scripts');"
+        ],
+        "description": "Enqueue Scripts and Styles"
+    }
+
+    "ACF Variable": {
+        "prefix": "jr_acf_variable",
+        "body": [
+            "$${1:variable_name} = (get_field('${2:field_name}') && get_field('${2:field_name}') != '') ? get_field('${2:field_name}') : '';"
+        ],
+        "description": "Create a variable using Advanced Custom Fields"
+    }
+    "Title Function": {
+        "prefix": "jr_title",
+        "body": [
+            "the_title();"
+        ],
+        "description": "Output the title of the post"
+    }
+    "Content Function": {
+        "prefix": "jr_content",
+        "body": [
+            "the_content();"
+        ],
+        "description": "Output the content of the post"
+    }
+    "Excerpt Function": {
+        "prefix": "jr_excerpt",
+        "body": [
+            "the_excerpt();"
+        ],
+        "description": "Output the excerpt of the post"
+    }
+    "Permalink Function": {
+        "prefix": "jr_permalink",
+        "body": [
+            "the_permalink();"
+        ],
+        "description": "Output the permalink of the post"
+    }   
+    "Thumbnail Function": {
+        "prefix": "jr_thumbnail_url",
+        "body": [
+            "get_the_post_thumbnail_url();"
+        ],
+        "description": "Output the thumbnail url of the post"
+    }
+    "Page template Function": {
+        "prefix": "jr_page_template",
+        "body": [
+            "<?php",
+            "//Template Name: Add Template Name",
+            "get_header();",
+            "get_footer();"
+        ],
+        "description": "Output the Page template of the post"
+    }
+    "Site Url Function": {
+        "prefix": "jr_site_url",
+        "body": [
+            "site_url()"
+        ],
+        "description": "Output the Site Url of the post"
+    }
+    "Site Url Function": {
+        "prefix": "jr_site_url",
+        "body": [
+            "site_url()"
+        ],
+        "description": "Output the Site Url of the post"
+    }
+    "WP_Query Loop": {
+        "prefix": "jr_query",
+        "body": [
+            "$the_query = new WP_Query( $args );",
+            "",
+            "// The Loop",
+            "if ( $the_query->have_posts() ) :",
+            "    while ( $the_query->have_posts() ) : $the_query->the_post();",
+            "        // Do Stuff",
+            "    endwhile;",
+            "endif;",
+            "",
+            "// Reset Post Data",
+            "wp_reset_postdata();"
+        ],
+        "description": "Create a new WP_Query loop"
+    }
+    "Add Options Page": {
+        "prefix": "jr_option_menu",
+        "body": [
+            "// Add the options page to the admin menu",
+            "function my_custom_options_page() {",
+            "    add_menu_page(",
+            "        '${1:Custom Options}',          // Page title",
+            "        '${1:Custom Options}',          // Menu title",
+            "        'manage_options',               // Capability",
+            "        '${2:custom-options}',          // Menu slug",
+            "        '${3:my_custom_options_page_html}', // Callback function",
+            "        'dashicons-admin-generic',      // Icon URL",
+            "        ${4:20}                         // Position",
+            "    );",
+            "}",
+            "add_action('admin_menu', 'my_custom_options_page');"
+        ],
+        "description": "Add a custom options page to the admin menu"
+    }
+
+}
