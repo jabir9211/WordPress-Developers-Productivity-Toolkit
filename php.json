@@ -124,14 +124,7 @@
     "Site Url Function": {
         "prefix": "jr_site_url",
         "body": [
-            "site_url()"
-        ],
-        "description": "Output the Site Url of the post"
-    }
-    "Site Url Function": {
-        "prefix": "jr_site_url",
-        "body": [
-            "site_url()"
+            "site_url();"
         ],
         "description": "Output the Site Url of the post"
     }
