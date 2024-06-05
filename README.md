@@ -67,18 +67,17 @@ We welcome contributions from the WordPress developer community!
 ### How to Contribute
 
 ###1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch-name`.
-3. Make your changes and commit them: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature-branch-name`.
-5. Open a pull request.
+1. Create a new branch: `git checkout -b feature-branch-name`.
+2. Make your changes and commit them: `git commit -m 'Add some feature'`.
+3. Push to the branch: `git push origin feature-branch-name`.
+4. Open a pull request.
 
-2. **Clone the Forked Repository:**
-   ```bash
-   1.git clone https://github.com/<your-username>/WordPress-Developers-Productivity-Toolkit.git
-   2.Create a New Branch:
-   3.Make Changes and Commit:
-   4.Push Changes to Forked Repository:
-
+###2. Clone the Forked Repository:
+1.git clone https://github.com/<your-username>/WordPress-Developers-Productivity-Toolkit.git
+2.Create a New Branch:
+3.Make Changes and Commit:
+4.Push Changes to Forked Repository:
+5.Create a Pull Request:
 
 ### Pull Request Process
 
