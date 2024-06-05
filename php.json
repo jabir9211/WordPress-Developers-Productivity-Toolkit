@@ -208,5 +208,15 @@
         ],
         "description": "Create a shortcode to display the latest posts in WordPress"
     }
+    "Print R Function": {
+        "prefix": "jr_print_r",
+        "body": [
+            "echo \"<pre>\";",
+            "print_r();",
+            "echo \"</pre>\";"
+        ],
+        "description": "Prints the content in a readable format and helpfull for debugging code."
+    }
+    
 
 }
