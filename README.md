@@ -73,7 +73,7 @@ We welcome contributions from the WordPress developer community!
 4. Open a pull request.
 
 ### 2. Clone the Forked Repository:
-1. git clone https://github.com/<your-username>/WordPress-Developers-Productivity-Toolkit.git
+1. git clone: https://github.com/jabir9211/WordPress-Developers-Productivity-Toolkit.git
 2. Create a New Branch
 3. Make Changes and Commit
 4. Push Changes to Forked Repository
