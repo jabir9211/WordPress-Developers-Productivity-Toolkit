@@ -56,6 +56,7 @@ Here's a quick overview of the snippets included:
 10. **Site URL Function (`jr_site_url`)**
 11. **WP_Query Loop (`jr_query`)**
 12. **Add Options Page (`jr_option_menu`)**
+12. **Add Options Page (`jr_option_menu`)**
 
 And many more to come! Stay tuned for future updates. 😊
 
