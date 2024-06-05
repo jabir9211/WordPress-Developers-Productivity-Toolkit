@@ -60,6 +60,26 @@ Here's a quick overview of the snippets included:
 
 And many more to come! Stay tuned for future updates. 😊
 
+## Contributing
+
+We welcome contributions from the WordPress developer community!
+
+### How to Contribute
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch-name`.
+3. Make your changes and commit them: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-branch-name`.
+5. Open a pull request.
+
+### Pull Request Process
+
+1. Ensure your code follows the project's coding standards.
+2. All pull requests require a review. One of the repository maintainers will review your pull request.
+3. Once approved, your changes will be merged into the `development` branch.
+4. After thorough testing, changes from the `development` branch will be merged into `main`.
+
+Thank you for contributing!
 ## 🤝 Join the Community
 
 We'd love to hear your feedback and see how these snippets are helping you. Join our GitHub community, contribute your own snippets, and let's build a more productive WordPress development environment together!Thanks
