@@ -215,7 +215,7 @@
             "print_r();",
             "echo \"</pre>\";"
         ],
-        "description": "Prints the content in a readable format and helpfull for debugging code."
+        "description": "Prints the content in a readable format and also helpfull for debugging code."
     }
     
 
