@@ -57,6 +57,18 @@ Here's a quick overview of the snippets included:
 11. **WP_Query Loop (`jr_query`)**
 12. **Add Options Page (`jr_option_menu`)**
 13. **Add shortcode to display posts (`jr_latestPosts_shortcode`)**
+14. **ACF Repeater Field (`jr_acf_repeater`)**
+15. **AJAX Callback Function (`jr_ajax_callback`)**
+16. **Filter Posts by Taxonomy (`jr_filter_taxonomy`)**
+17. **Display Posts in a Loop (`jr_display_posts`)**
+18. **WooCommerce Add Fees (`jr_woo_add_fees`)**
+19. **ACF Double Repeater Field (`jr_acf_double_repeater`)**
+20. **Start a Plugin (`jr_start_plugin`)**
+21. **Posts with Pagination (`jr_posts_with_pagination`)**
+22. **Load More Posts with AJAX (`jr_posts_load_more`)**
+23. **Add Meta Box (`jr_meta_box`)**
+24. **Rewrite Term Slug (`jr_rewrite_term_slug`)**
+25. **Add Column to Admin Table (`jr_add_column`)**
 
 And many more to come! Stay tuned for future updates. 😊
 
